@@ -1,0 +1,28 @@
+Reddit InsightBot
+This project is designed to crawl and classify data from Reddit using a combination of Python scripts, HTML templates, and a SQLite database. Below is a brief description of each component within the project.
+
+Files and Their Purposes
+classif.py: This script is responsible for crawling user accounts on Reddit. It collects data from the specified user accounts and processes it for further analysis.
+
+classif2.py: This script is used for crawling Reddit communities. It gathers posts and discussions from various communities (subreddits) for classification.
+
+crawl.py: This script allows users to crawl a specific Reddit account by entering the account URL in a search bar. The data is then fetched and processed.
+
+database_setup.py: This script sets up and manages the database using SQLite. It stores the crawled data, making it accessible for future retrieval and analysis.
+
+app.py: The main application file where APIs are built to interact with the crawled data. It serves as the backend logic for the project.
+
+index.html: The main index file of the project. It provides the structure and layout for the web interface.
+
+crawl.html: The HTML template used for the search bar functionality, allowing users to input and search for specific Reddit account URLs.
+
+test.py: This script retrieves and displays tags associated with posts from the database.
+
+test2.py: This script retrieves and displays the content of posts from the database.
+
+Technologies Used:
+
+Natural Language Processing: 
+Utilized Scrapy's built-in model for Named Entity Recognition (NER).
+Classification: 
+Logistic Regression was used to classify the crawled data.
